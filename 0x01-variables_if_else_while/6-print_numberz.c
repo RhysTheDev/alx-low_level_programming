@@ -11,7 +11,7 @@ int main(void)
 {
 	int start = 48;
 
-	while (start < 57)
+	while (start < 58)
 	{
 		putchar(start);
 		start++;
