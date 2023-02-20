@@ -18,10 +18,11 @@ int main(void)
 		start++;
 	}
 
-	while (second_start < 90)
+	while (second_start < 91)
 	{
 		putchar(second_start);
 		second_start++;
 	}
+	putchar(10);
 	return (0);
 }
