@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Creating bash file..."
+
+POSPAR=$1
+echo "Name of file is $1"
+echo "#!/bin/bash" >> $1
+echo "Making file executable..."
+chmod u+x $1
+
