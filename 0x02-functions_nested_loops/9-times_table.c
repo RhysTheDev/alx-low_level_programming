@@ -7,7 +7,19 @@
 
 void times_table(void)
 {
-	int i = ;
+	int i = 0;
 	int j = 0;
 
-	while 
+	while (i < 10)
+	{
+		j = 0;
+		while (j < 10)
+		{
+			_putchar( + r, i*j);
+			_putchar(',');
+			_putchar(' ');
+			j++;
+		}
+		i++;
+	}
+}
