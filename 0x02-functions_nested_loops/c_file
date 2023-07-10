@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Creating C file..."
+
+POSPAR=$1
+echo "Name of file is $1"
+echo "#include \"main.h\"" >> $1
+echo -e "/**\\n * main -\n *\n * Return: Always 0 (Success)\n */\n" >> $1
+echo -e "int main(void)\n{" >> $1
+echo "Making file executable..."
+chmod u+x $1
+
