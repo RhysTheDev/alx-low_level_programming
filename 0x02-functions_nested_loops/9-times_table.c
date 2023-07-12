@@ -13,7 +13,7 @@ void times_table(void)
 
 	while (h < 10)
 	{
-		while (r <10)
+		while (r < 10)
 		{
 			p = h * r;
 			if (p < 10)
