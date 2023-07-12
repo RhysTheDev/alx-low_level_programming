@@ -1,25 +1,43 @@
 #include "main.h"
-/**
- * times_table - print the nine times table from zero
- *
- * Return: Null
- */
 
+/**
+ * jack_bauer - prints the 9 times table, starting with 0.
+ *
+ * Return: void
+ */
 void times_table(void)
 {
-	int i = 0;
-	int j = 0;
+	int h = 0;
+	int r = 0;
+	int p;
 
-	while (i < 10)
+	while (h < 0)
 	{
-		j = 0;
-		while (j < 10)
+		while (r < 0)
 		{
-			_putchar( + r, i*j);
-			_putchar(',');
-			_putchar(' ');
-			j++;
+			p = h * r;
+			if (p < 10)
+			{
+				_putchar('0' + p);
+			}
+			else if (p >= 10)
+			{
+				_putchar('0' + (p / 10));
+				_putchar('0' + (p % 10));
+			}
+			if (r == 9)
+			{
+				_putchar('$');
+			}
+			if (r != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			r++;
 		}
-		i++;
+		r = 0;
+		h++;
+		_putchar('\n');
 	}
 }
