@@ -14,10 +14,10 @@ char *_strncat(char *dest, char *src, int n)
 	while (dest[dlen] != '\0')
 		dlen++;
 
-    for (i = 0; i < n; i++)
-        *(dest + dlen + i) = src[i];
-    if (i + 1 != n)
-        *(dest + dlen + i + 1) = '\0';
-    return (dest);
+	for (i = 0; i < n; i++)
+		*(dest + dlen + i) = src[i];
+	if (i + 1 != n)
+		*(dest + dlen + i + 1) = '\0';
+	return (dest);
 }
 
