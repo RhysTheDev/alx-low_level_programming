@@ -11,9 +11,7 @@ char *string_toupper(char *str)
 	while (*str != '\0')
 	{
 		if(*str >= 97 && *str <= 122)
-			_putchar(*str-32);
-		else
-			_putchar(*str);
+			*str -= 32;
 		str++;
 	}
 	return (str);
