@@ -15,11 +15,13 @@ char *cap_string(char *str)
 
 	while (*sloc != '\0')
 	{
-		if (*sloc == ' ' && *(sloc + 1) >= 97 && *(sloc + 1) <= 122)
+		if ((*sloc == ' ' || *sloc == ',' || *sloc == '\n' ||
+		*sloc == '!' || *sloc == '?' || *sloc == '.' ||
+		*sloc == ';' || *sloc == '\t') && (*(sloc + 1) >= 97 &&
+		*(sloc + 1) <= 122))
 			*(sloc + 1) -= 32;
 		sloc++;
 	}
-
 	return (str);
 }
 
