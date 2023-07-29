@@ -1,17 +1,16 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * add_node_end - adds a new node to the end of linked list
  * @head: double pointer to a linked list
  * @str: string to add to the new node
+ *
  * Return: pointer to the new node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newnode;
-	list_t *lastnode;
+	list_t *n_node;
+	list_t *f_node;
 	unsigned int len = 0;
 	const char *strtemp;
 
@@ -19,15 +18,15 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		return (NULL);
 	}
-	newnode = malloc(sizeof(list_t));
-	if (newnode == NULL)
+	n_node = malloc(sizeof(list_t));
+	if (n_node == NULL)
 	{
 		return (NULL);
 	}
-	newnode->str = strdup(str);
-	if (newnode->str == NULL)
+	n_node->str = strdup(str);
+	if (n_node->str == NULL)
 	{
-		free(newnode);
+		free(n_node);
 		return (NULL);
 	}
 	strtemp = str;
@@ -35,19 +34,19 @@ list_t *add_node_end(list_t **head, const char *str)
 	{
 		len++;
 	}
-	newnode->len = len;
-	newnode->next = NULL;
+	n_node->len = len;
+	n_node->next = NULL;
 	if (*head == NULL)
 	{
-		*head = newnode;
-		return (newnode);
+		*head = n_node;
+		return (n_node);
 	}
-	lastnode = *head;
-	while (lastnode->next)
+	f_node = *head;
+	while (f_node->next)
 	{
-		lastnode = lastnode->next;
+		f_node = f_node->next;
 	}
-	lastnode->next = newnode;
+	f_node->next = n_node;
 	return (*head);
 }
 
