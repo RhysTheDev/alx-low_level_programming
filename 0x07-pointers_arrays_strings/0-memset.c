@@ -6,7 +6,7 @@
  * @b: constant char byte
  * @n: unsigned int number of bytes
  *
- * Return - pointer to memory location
+ * Return: pointer to memory location
  */
 char *_memset(char *s, char b, unsigned int n)
 {
