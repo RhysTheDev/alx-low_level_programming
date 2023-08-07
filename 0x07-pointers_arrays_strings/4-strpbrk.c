@@ -20,7 +20,7 @@ char *_strpbrk(char *s, char *accept)
 	while (accept[alen])
 		alen++;
 
-	if(alen == 0 || min == 0)
+	if (alen == 0 || min == 0)
 		return (NULL);
 
 	while (accept[psub] != '\0')
