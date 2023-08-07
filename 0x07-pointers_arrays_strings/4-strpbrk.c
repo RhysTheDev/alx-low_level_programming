@@ -27,6 +27,6 @@ char *_strpbrk(char *s, char *accept)
 	}
 	*ptr = &(*(s + min));
 
-	return(*ptr);
+	return (*ptr);
 }
 
