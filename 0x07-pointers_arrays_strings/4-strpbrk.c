@@ -23,8 +23,6 @@ char *_strpbrk(char *s, char *accept)
 			j++;
 		if (j < min)
 			min = j;
-		if (j >= min)
-			return (NULL);
 		psub++;
 	}
 	*ptr = &(*(s + min));
