@@ -1,4 +1,5 @@
 *.sh
 tests/
 struct.c
+first
 
