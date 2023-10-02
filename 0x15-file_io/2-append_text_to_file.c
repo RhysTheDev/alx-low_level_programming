@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+  * _strlen - calculate length of a string
+  * @s: string
+  *
+  * Return: string length
+  */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i])
+		i++;
+
+	return (i);
+}
+
+/**
   * append_text_to_file- appends text at the end of a file
   * @filename: pointer to string
   * @text_content: pointer to string
