@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * _strlen- Returns the length of a string
-  * @s: String to count
+  * _strlen- computes the length of a string
+  * @s: string to count
   *
-  * Return: String length
+  * Return: length of string
   */
 int _strlen(char *s)
 {
@@ -17,11 +17,11 @@ int _strlen(char *s)
 }
 
 /**
-  * create_file- creates a file
-  * @filename: pointer to string
-  * @text_content: pointer to a string
+  * create_file- create a file
+  * @filename: ptr to string
+  * @text_content: ptr to a string
   *
-  * Return: 1 on success; -1 otherwise
+  * Return: 1 on success; -1 on failure
   */
 
 int create_file(const char *filename, char *text_content)
